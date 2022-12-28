@@ -6,7 +6,7 @@ import App from '..';
 describe('App Module', () => {
   test('hello world text should be in the document', () => {
     render(<App />);
-    const text = screen.getByText(/hello world/i);
+    const text = screen.getByText('Hello world !');
     expect(text).toBeInTheDocument();
   });
 });
