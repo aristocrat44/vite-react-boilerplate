@@ -1,7 +1,7 @@
 const path = require('path');
 
 const buildEslintCommand = (filenames) =>
-  `eslint --fix ${filenames
+  `yarn eslint --fix ${filenames
     .map((f) => path.relative(process.cwd(), f))
     .join(' --file ')}`;
 
