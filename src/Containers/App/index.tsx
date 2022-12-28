@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <h1 data-cy="hello-world">Hello world !</h1>
-      <div>
+      <div style={{ paddingLeft: 20 }}>
         {todo_.todoArr?.map((each, i) => (
           <span style={{ paddingLeft: 20 }} key={i}>
             {each}
