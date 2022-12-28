@@ -13,10 +13,6 @@
     "e2e:run": "cypress run",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.js": "eslint --fix ",
-    "*.{js,css,md,html,json}": "prettier --cache --write"
-  },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
