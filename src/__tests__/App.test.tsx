@@ -1,0 +1,12 @@
+import React from 'react';
+import { describe, expect, test } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import App from '../App';
+
+describe('App Module', () => {
+  test('hello world text should be in the document', () => {
+    render(<App />);
+    const text = screen.getByText(/hello world/i);
+    expect(text).toBeInTheDocument();
+  });
+});
