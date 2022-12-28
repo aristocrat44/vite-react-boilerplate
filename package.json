@@ -8,7 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
-    "test": "vitest"
+    "test": "vitest",
+    "e2e:open": "cypress open",
+    "e2e:run": "cypress run"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
@@ -31,6 +33,7 @@
     "@typescript-eslint/parser": "^5.47.0",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "@vitest/coverage-c8": "^0.26.2",
+    "cypress": "^12.2.0",
     "eslint": "^8.30.0",
     "eslint-plugin-react": "^7.31.11",
     "jsdom": "^20.0.3",

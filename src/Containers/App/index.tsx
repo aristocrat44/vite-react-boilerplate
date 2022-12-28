@@ -9,7 +9,7 @@ const App = () => {
   const [newTodo, setNewTodo] = useState('');
   return (
     <>
-      <h1>Hello world !</h1>
+      <h1 data-cy="hello-world">Hello world !</h1>
       <div>
         {todo_.todoArr?.map((each, i) => (
           <span style={{ paddingLeft: 20 }} key={i}>
