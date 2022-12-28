@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { Instance, types } from 'mobx-state-tree';
 import { createContext, useContext } from 'react';
 import TodoStore from './TodoStore/index';
