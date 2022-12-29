@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { observer } from 'mobx-react';
 import { Link } from 'react-router-dom';
 import { useStore } from '../../Store';
+import dayjs from 'dayjs';
 
 const App = () => {
   const { todo_ } = useStore();
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <div style={{ paddingLeft: 20 }}>
       <h1 data-cy="hello-world">Hello world !</h1>
+      <h2>{dayjs().format()}</h2>
       <div>
         {todo_.todoArr?.map((each, i) => (
           <span style={{ paddingLeft: 20 }} key={i}>
