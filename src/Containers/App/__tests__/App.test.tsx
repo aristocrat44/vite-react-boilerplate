@@ -7,11 +7,6 @@ import { MemoryRouter } from 'react-router-dom';
 
 vi.mock('../../../Store/index');
 
-interface TodoArr {
-  todoArr: string[];
-}
-[];
-
 describe('App Module', () => {
   afterEach(cleanup);
   beforeEach(() => {
